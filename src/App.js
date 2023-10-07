@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+function MyComputer(){
+
+   // Step three 
+  // return <h1>Hello React!</h1>
+
+  //JSX Expressions - Step four
+  // const name = 'Peter';
+  // const greeting = <p>Hello, {name}!</p>
+  // return <h1>{greeting}</h1>
+
+  // JSX Attributes - Step five
+  // const link = <a href="https://example.com">Visit Example</a>
+  // return <p>{link}</p>
+
+  // Updating Component - Step six
+  
+  const handleClick = () => alert('Hello, React!');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <h1>Hello, React!</h1> */}
+      <button onClick={handleClick}>Click Me</button>
     </div>
   );
+
+
 }
 
-export default App;
+export default MyComputer;
